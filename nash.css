@@ -1,0 +1,26 @@
+#snowfield {
+    pointer-events: none;
+    user-select: none;
+    z-index: 100000;
+    position: fixed;
+}
+
+.snowflake {
+    position: absolute;
+    color: #fff; /* Corazones en blanco */
+    line-height: 1;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.snowflake-solid {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #fff; /* Corazón blanco */
+}
