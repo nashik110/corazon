@@ -7,7 +7,9 @@
 
 .snowflake {
     position: absolute;
-    color: #fff; /* Corazones en blanco */
+    color: transparent; /* Sin color de relleno */
+    -webkit-text-stroke: 1.5px white; /* Contorno blanco */
+    text-stroke: 1.5px white; /* Para compatibilidad adicional */
     line-height: 1;
     pointer-events: none;
     -webkit-user-select: none;
@@ -16,11 +18,10 @@
     user-select: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 30px; /* Tamaño base, puede variar dinámicamente */
+    font-family: sans-serif;
 }
 
 .snowflake-solid {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    background: #fff; /* Corazón blanco */
+    display: none; /* Si usas solo texto, puedes ocultar esto */
 }
